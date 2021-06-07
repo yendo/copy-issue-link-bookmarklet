@@ -4,7 +4,9 @@ const url = window.location.href;
 
 if (titleDiv && titleDiv.children[0] && titleDiv.children[0].textContent) {
   const title = titleDiv.children[0].textContent.trim();
-  textArea.value = `[${title}](${url})`;
+  const u = url.split("/")
+  const shortref = `${u[3]}/${u[4]}#${u[6]}`
+  textArea.value = `${title} [${shortref}](${url})`;
   document.body.appendChild(textArea);
   textArea.select();
   document.execCommand("copy");

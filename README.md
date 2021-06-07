@@ -1,6 +1,6 @@
 # Copy issue link bookmarklet
 
-Copies a markdown link to the GitHub issue you're currently viewing in the form of `[issue title](issue URL)`.
+Copies a markdown link to the GitHub issue you're currently viewing in the form of `issue title [owner/repo#num](issue URL)`.
 
 ## Usage
 
